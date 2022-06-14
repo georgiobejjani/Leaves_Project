@@ -1,0 +1,81 @@
+.features-wrapper {
+    width: 80%;
+    height: fit-content;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: #F7F7F7;
+
+    &__annualleaves {
+        width: 100%;
+        height: fit-content;
+        background-color: white;
+        margin: auto 0 10px;
+    }
+
+    &__requestleaves {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 100%;
+        height: fit-content;
+        background-color: white;
+        margin: auto 0 10px;
+
+        &__title {
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            margin-left: 10%;
+
+        }
+
+        .containerfullname,
+        .containerdays {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-around;
+
+            &__firstname,
+            &__lastname,
+            &__firstday,
+            &__lastday {
+                width: 30%;
+            }
+        }
+
+        .containerreason {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .actionfields {
+            display: flex;
+            align-items: center;
+
+            &__totdays {
+                padding-left: 50px;
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                position: absolute;
+                left: 15%;
+            }
+
+            &__btnrequest {
+                @include btn();
+                border-radius: 119px;
+            }
+        }
+    }
+
+    &__myleaves {
+        padding-top: 30px;
+        width: 100%;
+        height: fit-content;
+        background-color: white;
+        margin: auto 0;
+    }
+}

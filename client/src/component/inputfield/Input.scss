@@ -1,0 +1,11 @@
+.input-component{
+    &__subtitle{
+@include inputsubtitle();
+    }
+    &__inputtype{
+@include inputfields();
+    }
+    &__textarea{
+@include textarea();
+    }
+}

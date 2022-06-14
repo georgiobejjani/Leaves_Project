@@ -1,0 +1,9 @@
+@import "../src/sass/style";
+@import '../src/component/navbar/Navbar.scss';
+@import "../src/container/EmployeeForm/Employee";
+@import "../src/component/inputfield/Input";
+
+body{
+    margin: 0;
+    padding: 0;
+}
