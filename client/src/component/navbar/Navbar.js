@@ -12,7 +12,6 @@ export default function Navbar() {
             <button className='Navbar__userstats-btn'>Logout</button>
        </div>
     </nav>
-    <div className='verticalbox'/>
     </>
   )
 }

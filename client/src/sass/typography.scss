@@ -53,3 +53,10 @@
     font-size: 12px;
     line-height: 15px;
 }
+@mixin titlecontainer () {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 10%;
+}

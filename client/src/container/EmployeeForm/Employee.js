@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../../component/navbar/Navbar";
 import Input from "../../component/inputfield/Input";
 import Textarea from "../../component/inputfield/Textarea";
+import Barchart from "../../component/barchart/Barchart";
 export default function Employee() {
     const [totaldays, settotaldays] = useState(0)
     return (
@@ -9,11 +10,12 @@ export default function Employee() {
             <Navbar />
             <div className='features-wrapper'>
                 <div className='features-wrapper__annualleaves'>
-                    annual leaves
+                <div className='features-wrapper__annualleaves__title'>Annual Leave</div>
+                <Barchart/>
                 </div>
                 <form>
                     <div className='features-wrapper__requestleaves'>
-                        <div className='features-wrapper__requestleaves__title'>Request leaves</div>
+                        <div className='features-wrapper__requestleaves__title'>Request Leaves</div>
                         <div className='containerfullname'>
                             <div className='containerfullname__firstname'>
                                 <Input inputsubtitle='First Name' />
@@ -42,7 +44,9 @@ export default function Employee() {
 
                     </div>
                 </form>
-                <div className='features-wrapper__myleaves'></div>
+                <div className='features-wrapper__myleaves'>
+                <div className='features-wrapper__myleaves__title'>My Leaves</div>
+                </div>
             </div>
         </>
     )

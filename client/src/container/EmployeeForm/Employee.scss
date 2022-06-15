@@ -1,15 +1,21 @@
 .features-wrapper {
-    width: 80%;
+    width: 98%;
     height: fit-content;
-    margin: 50px auto;
+    margin: 10px auto;
     padding: 10px;
-    background-color: #F7F7F7;
+    // background-color: #F7F7F7;
 
     &__annualleaves {
+        padding-top: 30px;
+        padding-bottom: 30px;
         width: 100%;
         height: fit-content;
         background-color: white;
         margin: auto 0 10px;
+        border-radius: 10px;
+        &__title{
+            @include titlecontainer();
+        }
     }
 
     &__requestleaves {
@@ -19,14 +25,9 @@
         height: fit-content;
         background-color: white;
         margin: auto 0 10px;
-
+        border-radius: 10px;
         &__title {
-            font-family: $mainFont;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            margin-left: 10%;
-
+          @include titlecontainer();
         }
 
         .containerfullname,
@@ -40,6 +41,16 @@
             &__firstday,
             &__lastday {
                 width: 30%;
+
+                @media #{$mobile} {
+                    width: 100%;
+                }
+            }
+
+            @media #{$mobile} {
+                width: 80%;
+                display: table;
+                margin: 0 auto;
             }
         }
 
@@ -61,12 +72,26 @@
                 font-weight: 400;
                 font-size: 18px;
                 position: absolute;
-                left: 15%;
+                left: 8%;
+
+                @media #{$mobile} {
+                    position: unset;
+                    font-size: 14px;
+                    padding-left: 30px;
+                }
             }
 
             &__btnrequest {
                 @include btn();
                 border-radius: 119px;
+
+                @media #{$mobile} {
+                    height: 30px;
+                    width: 100px;
+                    font-size: 12px;
+                    line-height: 30px;
+                    margin-right: 20px;
+                }
             }
         }
     }
@@ -77,5 +102,9 @@
         height: fit-content;
         background-color: white;
         margin: auto 0;
+        border-radius: 10px;
+        &__title{
+            @include titlecontainer();
+        }
     }
 }

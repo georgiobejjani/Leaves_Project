@@ -2,8 +2,10 @@
 @import '../src/component/navbar/Navbar.scss';
 @import "../src/container/EmployeeForm/Employee";
 @import "../src/component/inputfield/Input";
-
+@import "../src/component/barchart/Barchart";
 body{
     margin: 0;
     padding: 0;
+    font-family: $mainFont;
+    background-color: $Fill;
 }
