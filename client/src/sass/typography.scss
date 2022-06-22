@@ -1,4 +1,4 @@
-@mixin btn($backgroundColor: $secondaryColor, $hoverBgColor: $mainColor) {
+@mixin btn($backgroundColor: $secondaryColor) {
     width: 160px;
     margin: auto;
     display: block;
@@ -8,9 +8,9 @@
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
-    background-color: $mainColor;
+    background-color: $backgroundColor;
     height: 44px;
-    line-height: 44px;
+    line-height: 35px;
     text-transform: uppercase;
     border: none;
     text-decoration: none;
@@ -59,4 +59,12 @@
     font-weight: 400;
     font-size: 24px;
     margin-left: 10%;
+}
+@mixin MenuLink () {
+    color: white;
+    font-size: 14px;
+    font-weight: 600px;
+    font-style: normal;
+    font-family: $mainFont;
+    text-transform: uppercase;
 }
